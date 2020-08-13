@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		27C2FED7249B9BE10081FE8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C2FED6249B9BE10081FE8E /* Assets.xcassets */; };
 		27C2FEDA249B9BE10081FE8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C2FED9249B9BE10081FE8E /* Preview Assets.xcassets */; };
 		27C2FEDD249B9BE10081FE8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C2FEDB249B9BE10081FE8E /* LaunchScreen.storyboard */; };
+		27C2FEE6249B9C130081FE8E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 27C2FEE5249B9C130081FE8E /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C2FEE6249B9C130081FE8E /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = "Unsplash The Kraken";
+			packageProductDependencies = (
+				27C2FEE5249B9C130081FE8E /* SDWebImageSwiftUI */,
+			);
 			productName = "Unsplash The Kraken";
 			productReference = 27C2FECD249B9BE00081FE8E /* Unsplash The Kraken.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 27C2FEC4249B9BE00081FE8E;
+			packageReferences = (
+				27C2FEE4249B9C130081FE8E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 27C2FECE249B9BE00081FE8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27C2FEE4249B9C130081FE8E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27C2FEE5249B9C130081FE8E /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27C2FEE4249B9C130081FE8E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27C2FEC5249B9BE00081FE8E /* Project object */;
 }
